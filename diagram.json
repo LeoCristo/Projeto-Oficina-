@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "author": "leo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -68, "left": -130.67, "attrs": {} },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick1",
+      "top": 261.8,
+      "left": -117.13,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel-canvas",
+      "id": "neopixels",
+      "top": 7.13,
+      "left": -389.8,
+      "rotate": 180,
+      "attrs": { "rows": "16", "cols": "8", "pixelate": "1", "matrixLayout": "serpentine" }
+    },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": 183.56, "left": -25.33, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 230.13, "left": -161.93, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd2", "top": -18.27, "left": -448.99, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -19.67,
+      "left": 128.13,
+      "attrs": { "color": "green", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 69.26,
+      "left": 130.4,
+      "attrs": { "color": "green", "bounce": "0" }
+    },
+    { "type": "wokwi-gnd", "id": "gnd3", "top": 134.4, "left": 216.34, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd4", "top": 137.06, "left": 265.01, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "vcc2", "top": -35.68, "left": -303.01, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "vcc1:VCC", "joystick1:VCC", "red", [ "v38.13", "h-28.77" ] ],
+    [ "joystick1:GND", "gnd1:GND", "black", [ "v-64.27", "h-68.3" ] ],
+    [ "joystick1:HORZ", "esp:D34", "orange", [ "v-112.33", "h-117.67", "v-188" ] ],
+    [ "joystick1:VERT", "esp:D35", "#8f4814", [ "v-119", "h-121.27", "v-157.33" ] ],
+    [ "neopixels2:VSS", "gnd2:GND", "black", [ "v-41.46", "h-136.37" ] ],
+    [ "gnd3:GND", "btn2:2.r", "black", [ "v0" ] ],
+    [ "gnd4:GND", "btn1:2.r", "black", [ "v0" ] ],
+    [ "esp:D19", "btn1:1.l", "yellow", [ "h73.37", "v-12.53" ] ],
+    [ "btn2:1.l", "esp:D18", "cyan", [ "h-85.73", "v-68.59" ] ],
+    [ "esp:D13", "neopixels2:DIN", "green", [ "h-38.54", "v-165.75", "h1.05" ] ],
+    [ "neopixels:VSS", "gnd2:GND", "green", [ "v-42.54", "h-136.61" ] ],
+    [ "neopixels:DIN", "esp:D15", "green", [ "v-90.2", "h289.99", "v148.29" ] ],
+    [ "vcc2:VCC", "neopixels:VDD", "red", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
