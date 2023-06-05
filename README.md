@@ -21,7 +21,7 @@
   <h3>Componentes utilizados</h3>
     <ul>
     <li>  <h3>Conjunto montado</h3>
-  <img src="esquematico_oficina.png" alt="esquemático do projeto">
+  <img src="esquematico_oficina.PNG" alt="esquemático do projeto">
       </li>
     </ul>
  
