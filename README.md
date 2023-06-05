@@ -1,4 +1,4 @@
-# Projeto-Oficina-
+# Projeto-Oficina
 
 <!DOCTYPE html>
 <html>
@@ -18,9 +18,9 @@
     <li><strong>Descrição:</strong>Implementação de jogo utilizando o display endereçavel WS2812 como tela com 16 linhas e 8 colunas, uso do joystick para movimentação de peças e botões para pausar e iniciar o jogo. </li
   </ul>
   
-  <h3>Componentes utilizados</h3>
+  <h3>Folhas de desenho</h3>
     <ul>
-    <li>  <h3>Conjunto montado</h3>
+    <li>  <h3>Esquemático</h3>
   <img src="esquematico_oficina.PNG" alt="esquemático do projeto">
       </li>
     </ul>
