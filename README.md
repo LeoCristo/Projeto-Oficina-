@@ -23,6 +23,9 @@
     <li>  <h3>Esquemático</h3>
   <img src="esquematico_oficina.PNG" alt="esquemático do projeto">
       </li>
+      <li>  <h3>Esquemático auxiliar</h3>
+  <img src="representaçao_simulacao.PNG" alt="esquemático auxiliar do projeto">
+      </li>
     </ul>
  
   
